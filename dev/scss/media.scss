@@ -233,6 +233,30 @@
     position: static;
     display: inline-block;
   }
+  .football-news .list .item,
+  .latest-news .item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .matches-item .teams .team{
+    @include clearfix;
+  }
+  .team-name{
+    float: left;
+    width: auto;
+  }
+  .goals{
+    float: right;
+    margin-right: 10px;
+  }
+  .matches-item{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .matches-item-item{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 @media all and (max-width: 864px){
   header .top-header{
