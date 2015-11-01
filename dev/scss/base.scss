@@ -1,0 +1,126 @@
+/*!=================
+  Basic elements
+====================*/
+img{
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.inp-textarea,
+textarea{
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.orange-button{
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 30px;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 0 -1px 0 #cc5000;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 #f29343, 0 4px 2px 0 rgba(0,0,0,.125);
+  background: #ffae19;
+  background: -moz-linear-gradient(top,  #ffae19 0%, #ff8212 51%, #ffae19 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffae19), color-stop(51%,#ff8212), color-stop(100%,#ffae19));
+  background: -webkit-linear-gradient(top,  #ffae19 0%,#ff8212 51%,#ffae19 100%);
+  background: -o-linear-gradient(top,  #ffae19 0%,#ff8212 51%,#ffae19 100%);
+  background: -ms-linear-gradient(top,  #ffae19 0%,#ff8212 51%,#ffae19 100%);
+  background: linear-gradient(to bottom,  #ffae19 0%,#ff8212 51%,#ffae19 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffae19', endColorstr='#ffae19',GradientType=0 );
+  &:active{
+    position: relative;
+    top: 2px;
+    box-shadow: 0 1px 0 #f29343, inset 0 4px 2px 0 rgba(0,0,0,.125);
+  }
+}
+
+.s-hidden {
+  visibility: hidden;
+  padding-right: 10px;
+}
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+.styledSelect {
+  border: 1px solid #babbbe;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 15px;
+  padding-right: 30px;
+  line-height: 28px;
+  font-size: 14px;
+  border-radius: 5px;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 2%, #e4e5e6 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#ffffff), color-stop(100%,#e4e5e6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 2%,#e4e5e6 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 2%,#e4e5e6 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 2%,#e4e5e6 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #ffffff 2%,#e4e5e6 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e4e5e6',GradientType=0 ); /* IE6-9 */
+  &.active{
+    background: #E4E5E6;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+.styledSelect:after {
+  content: "";
+  width: 20px;
+  height: 28px;
+  background: transparent url('../images/select.png') center no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 1px solid #babbbe;
+}
+.styledSelect:active,
+.styledSelect.active {
+  background-color: #eee;
+}
+.options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #babbbe;
+  background-color: #fff;
+  line-height: 1;
+  border-top: none;
+}
+.options li {
+  margin: 0;
+  padding: 10px 15px;
+}
+.options li:hover {
+  background-color: #518f31;
+  color: #fff;
+}
+
+
+/* Tabs */
+.tabs {display: none;visibility: hidden;}
+.js-tabby .tabs {display: block;visibility: visible;}
+.tabs a,.tabs button {cursor: pointer;}
+.js-tabby .tabs-pane {display: none;visibility: hidden;}
+.tabs-pane.current{display: block;visibility: visible;}
+.tabs:before,.tabs:after {display: table;content: "";}
+.tabs:after {clear: both;}

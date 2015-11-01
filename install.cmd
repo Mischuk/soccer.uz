@@ -1,0 +1,1 @@
+npm install --save-dev gulp-connect gulp gulp-sass gulp-plumber gulp-sourcemaps gulp-autoprefixer gulp-rigger gulp-notify

@@ -1,0 +1,293 @@
+@media all and (max-width: 1240px) {
+  html, body, .container{
+    min-width: 0;
+  }
+  .wrapper{
+    width: 94%;
+  }
+  .main-menu > ul > li > a{
+    padding: 0 10px;
+  }
+  .main-menu{
+    margin-left: 25px;
+  }
+  .left-sidebar{
+    width: 25%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .right-sidebar{
+    width: 20%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .center{
+    width: 43%;
+  }
+  .football-news .list .details{
+    width: 20%;
+    margin-right: 5%;
+  }
+  .football-news .list .title{
+    width: 75%;
+  }
+  .center .articles .item .image{
+    width: 25%;
+  }
+  .center .articles .item .lead-article{
+    width: 70%;
+    margin-left: 5%;
+  }
+  .center .news .item .image{
+    width: 45%;
+  }
+  .center .news .item .news-intro{
+    width: 50%;
+    margin-left: 5%;
+  }
+  .center .videos .carousel:after{
+    display: none;
+  }
+  .rslides li{
+    left: 0;
+    top: 20px;
+    height: 370px;
+    width: 100%;
+  }
+  .header-buttons{
+    margin-right: 20px;
+  }
+  footer{
+    min-width: 0;
+  }
+  html:before,
+  html:after{
+    display: none;
+  }
+}
+
+@media all and (max-width: 1023px){
+  html{
+    padding-top: 3%;
+  }
+  .menu-trigger{
+    display: block;
+  }
+  .header-buttons{
+    display: none;
+  }
+  header{
+    position: relative;
+    .logo{
+      position: absolute;
+      left: 50%;
+      top: 0;
+      background: transparent url('../images/mobile-logo.png') 0 0 no-repeat;
+      width: 163px;
+      height: 26px;
+      margin-left: -81.5px;
+      margin-top: 15px;
+    }
+    .authorization > span{
+      display: none;
+    }
+    .authorization > div:last-child{
+      margin-right: 10px;
+    }
+    .authorization {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      height: 34px;
+      .signin a,
+      .login a{
+        background: #7ec037;
+        background: -moz-linear-gradient(top, #7ec037 0%, #518f32 50%, #7ec037 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7ec037), color-stop(50%, #518f32), color-stop(100%, #7ec037));
+        background: -webkit-linear-gradient(top, #7ec037 0%, #518f32 50%, #7ec037 100%);
+        background: -webkit-gradient(linear, left top, left bottom, from(#7ec037), color-stop(50%, #518f32), to(#7ec037));
+        background: linear-gradient(to bottom, #7ec037 0%, #518f32 50%, #7ec037 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ec037', endColorstr='#7ec037',GradientType=0 );
+        position: relative;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 20px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 3px 0 #518f31, 0 4px 2px 0 rgba(0, 0, 0, 0.125);
+        box-shadow: 0 3px 0 #518f31, 0 4px 2px 0 rgba(0, 0, 0, 0.125);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        span{
+          text-decoration: none;
+        }
+        &:after{
+          display: none;
+        }
+        &:hover{
+          span{
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+        &:active{
+          position: relative;
+          top: 2px;
+          box-shadow: 0 1px 0 #518f31, inset 0 4px 2px 0 rgba(0, 0, 0, 0.125);
+        }
+      }
+    }
+  }
+  header .top-header{
+    height: 10px;
+  }
+  .main-search,
+  .main-menu ul{
+    display: none;
+  }
+  .menu-opened{
+    .main-search{
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 75px;
+      float: none;
+      width: 200px;
+      margin: 0;
+      z-index: 6000;
+      input[type="text"]{
+        border-left: none;
+        border-right: none;
+      }
+    }
+    > ul > li > ul{
+      display: none !important;
+    }
+    ul{
+      padding-top: 70px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 60px;
+      width: 200px;
+      background-color: #fff;
+      z-index: 5000;
+      // border: 3px solid #518f31;
+      box-shadow: 0 2px 5px rgba(0,0,0,.525);
+      li{
+        float: none;
+        a{
+          text-align: left;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  .center{
+    display: none;
+  }
+  .left-sidebar,
+  .right-sidebar{
+    width: 94%;
+  }
+  .football-news .list .details{
+    width: 50px;
+  }
+  .matches-list .tabs-nav{
+    table-layout: fixed;
+  }
+
+  .matches-list .tabs-nav li{
+    text-align: center !important;
+  }
+  .matches-list .tabs-nav li:last-child a:after,
+  .matches-list .tabs-nav li:first-child a:after{
+    left: 50%;
+    right: auto;
+    margin-left: -10px;
+  }
+  .football-news .list .details{
+    width: auto;
+    margin-right: 0;
+    .date{
+      border: none;
+    }
+  }
+  .football-news .list .title{
+    line-height: 21px;
+    margin-left: 5px;
+    width: auto;
+    display: inline-block;
+  }
+  .football-news .list .title a:after{
+    display: none;
+  }
+  .football-news .list .title > a{
+    display: inline;
+  }
+  .football-news .list .title .comments{
+    position: static;
+    display: inline-block;
+  }
+}
+@media all and (max-width: 864px){
+  header .top-header{
+    height: 60px;
+  }
+  header .authorization{
+    top: 60px;
+  }
+  .menu-trigger{
+    top: 55px;
+  }
+  .menu-opened ul{
+    top: 110px;
+  }
+  .menu-opened .main-search{
+    top: 125px;
+  }
+  footer .counters{
+    display: none;
+  }
+  footer .copy{
+    float: right;
+    text-align: right;
+    margin-right: 30px;
+  }
+}
+@media all and (max-width: 568px){
+  footer .wrapper{
+    display: block;
+    line-height: 1;
+  }
+  footer .logo{
+    display: block;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  footer .copy{
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 380px){
+  .signin{
+    display: none !important;
+  }
+  .login{
+    margin-right: 10px;
+  }
+  .football-news .list .title{
+    width: 70%;
+  }
+  .s-hidden{
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@mixin pt{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+}
+@mixin pb-bold{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+@mixin bold {
+  font-family: 'PFDinTextCondPro-Bold';
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin regular {
+  font-family: 'PFDinTextCondPro-Regular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin light {
+  font-family: 'PFDinTextCondPro-Light';
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin medium {
+  font-family: 'PFDinTextCondPro-Medium';
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin black {
+  font-family: 'PFDinTextCondPro-XBlack';
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin italic {
+  font-family: 'PFDinTextCondPro-Italic';
+  font-weight: normal;
+  font-style: normal;
+}

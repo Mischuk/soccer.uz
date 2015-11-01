@@ -1,0 +1,127 @@
+.matches-info{
+  background-color: #fff;
+  .right-header{
+    position: relative;
+    height: 50px;
+    border-bottom: 2px solid #ff8212;
+    line-height: 48px;
+    background-color: #fff;
+    padding-left: 45px;
+    @include bold;
+    text-transform: uppercase;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      background: url('../images/sprite.png') no-repeat -78px -64px;
+      width: 23px;
+      height: 18px;
+      margin-top: -9px;
+    }
+  }
+}
+.matches-list{
+  .tabs-nav{
+    display: table;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    a{
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #518f32;
+      padding: 15px 0;
+      display: block;
+      @include medium;
+      border-bottom: 1px solid #c2c2c2;
+      background: #fff;
+      &.current{
+        color: #000;
+        position: relative;
+        z-index: 10;
+        &:after{
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -10px;
+          width: 20px;
+          height: 20px;
+          margin-left: -10px;
+          border: 1px solid #c2c2c2;
+          transform: rotate(45deg);
+          border-top-color: #fff;
+          border-left-color: #fff;
+          background: #fff;
+        }
+      }
+    }
+    li{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      &:first-child{
+        text-align: left;
+        a:after{
+          margin-left: -12px;
+        }
+      }
+      &:last-child{
+        text-align: right;
+        a:after{
+          left: auto;
+          margin-left: 0;
+          right: 10px;
+        }
+      }
+
+    }
+  }
+}
+.matches-item{
+  position: relative;
+  padding: 20px 10px;
+  &:nth-child(even){
+    background-color: #fbfbfb;
+  }
+  .title{
+    @include bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .date{
+    color: #959595;
+    margin-bottom: 10px;
+  }
+  .time{
+    position: absolute;
+    left: 10px;
+    bottom: 35px;
+    width: 50px;
+    height: 23px;
+    border: 1px solid #ff8015;
+    text-align: center;
+    color:#ff8015;
+    line-height: 21px;
+    border-radius: 5px;
+  }
+  .teams{
+    padding-left: 60px;
+    height: 50px;
+    .team{
+      height: 25px;
+      line-height: 25px;
+      font-size: 14px;
+      @include medium;
+      padding-left: 25px;
+      cursor: default;
+      &.team-1{
+        background: transparent url('../images/content/team/1.png') left center no-repeat;
+      }
+      &.team-2{
+        background: transparent url('../images/content/team/2.png') left center no-repeat;
+      }
+    }
+  }
+}
